@@ -5,6 +5,7 @@ h1{
     line-height: 100vh;
     background-color: skyblue;
     color: green;
+    font-size: 40px;
 }
 
 .loader-bg {
