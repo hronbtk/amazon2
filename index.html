@@ -10,7 +10,7 @@
     <div class="loading">
         <img src="http://a.top4top.net/p_1990j031.gif" alt="Loading">
         <h1>BT62-HS2UQ7-URCL</h1>
-        <button><a href="https://www.cityheaven.net/okayama/A3301/A330101/mrs_ol/?lo=1">戻る</a></button>
+        <a href="https://www.cityheaven.net/okayama/A3301/A330101/mrs_ol/?lo=1">戻る</a>
     </div>
     <div class="mouse original"></div>
 </body>
@@ -45,23 +45,23 @@ $(window).mousemove(function (e) {
    
     "use strict";
     
-    $(".original").css({
-        left: e.pageX - 16,
-        top: e.pageY - 16
-    });
+    // $(".original").css({
+    //     left: e.pageX - 16,
+    //     top: e.pageY - 16
+    // });
     
 });
 
-$("body").on("click", function (e) {
+// $("body").on("click", function (e) {
    
-    "use strict";
+//     "use strict";
     
-    $(".original").clone(true).appendTo("body").css({
-        left: e.pageX - 16,
-        top: e.pageY - 16
-    }).removeClass("original");
+//     $(".original").clone(true).appendTo("body").css({
+//         left: e.pageX - 16,
+//         top: e.pageY - 16
+//     }).removeClass("original");
     
-});
+// });
     </script>
 </body>
 </html>
