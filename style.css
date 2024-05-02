@@ -5,6 +5,33 @@
 body {
     overflow: hidden
 }
+h1{
+    text-align: center;
+}
+button{
+    display: block;
+    margin: 0 auto;
+    background-color: yellow;
+    width: 150px;
+    height: 60px;
+    border-radius: 5px;
+    border: #fff782 2px double;
+    box-shadow: #000 5px 5px;
+}
+button:hover{
+    position: relative;
+    top: 5px;
+    left: 5px;
+    box-shadow: none;
+}
+button>a{
+    line-height: 60px;
+    width: 150px;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 24px;
+}
     
 .loading {
     background-color: #FFF;
@@ -41,4 +68,7 @@ body {
         height: 15px
     }
     
+}
+h1{
+    z-index: 100000;
 }
