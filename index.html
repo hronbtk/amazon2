@@ -2,30 +2,63 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="destyle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>★5月は特別イベント開催!!知る人ぞ知るあの人気企画再び☆彡</title>
+    <title>Document</title>
 </head>
 <body>
-    <!-- ローディング用HTML -->
-    <div class="loader-bg">
-        <div class="loader"></div>
+    <div class="loading">
+        <img src="http://a.top4top.net/p_1990j031.gif" alt="Loading">
     </div>
-    <h1>BT62-HS2UQ7-URCL</h1>
-    <!-- ローディング用HTML ここまで -->
+    <div class="mouse original"></div>
 </body>
       
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script>
-$(function(){
-    $(window).on('load',function(){
-        $('.loader').delay(500).fadeOut(500);
-        $('.loader-bg').delay(700).fadeOut(700);
+$(".loading").height($(window).height());
+$(".loading").width($(window).width());
+
+    
+$(".loading img").css({
+    paddingTop: ($(".loading").height() - $(".loading img").height()) / 2,
+    paddingLeft: ($(".loading").width() - $(".loading img").width()) / 2
+});
+
+$(window).resize(function () {
+   
+    "use strict";
+    
+    $(".loading").height($(window).height());
+    $(".loading").width($(window).width());
+
+
+    $(".loading img").css({
+        paddingTop: ($(".loading").height() - $(".loading img").height()) / 2,
+        paddingLeft: ($(".loading").width() - $(".loading img").width()) / 2
     });
-    setTimeout(function(){
-        $('.loader-bg').fadeOut(500);
-    },5000);
+    
+});
+
+$(window).mousemove(function (e) {
+   
+    "use strict";
+    
+    $(".original").css({
+        left: e.pageX - 16,
+        top: e.pageY - 16
+    });
+    
+});
+
+$("body").on("click", function (e) {
+   
+    "use strict";
+    
+    $(".original").clone(true).appendTo("body").css({
+        left: e.pageX - 16,
+        top: e.pageY - 16
+    }).removeClass("original");
+    
 });
     </script>
 </body>
